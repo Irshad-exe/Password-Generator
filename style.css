@@ -1,0 +1,92 @@
+body{
+    background-color: #626266;
+}
+.heading{
+    user-select: none; /* supported by Chrome and Opera */
+    display: flex;
+    color: rgb(6, 240, 6);
+    text-shadow: 4px 0px 8px #FF0000;
+   font-size: 85px;
+   justify-content: center;
+   animation: i 9s forwards ease-in-out infinite;
+}
+@keyframes i {
+    0%{color: aliceblue;}
+    10%{color: aqua;}
+    30%{color: blue;}
+    50%{color: palevioletred;}
+    70%{color: yellow;}
+}
+#press{
+    user-select: none; /* supported by Chrome and Opera */
+    display: flex;
+    margin: auto;
+    text-align: center;
+    width: 170px;
+    font-size: 30px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: green;
+    cursor: pointer;
+    font-weight: 600;
+}
+button:hover{
+    user-select: none; /* supported by Chrome and Opera */
+    background-color: #626266;
+    color: white;
+    
+}
+div {
+    user-select: none; /* supported by Chrome and Opera */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 5px;
+    margin: auto;
+}
+div #output{
+    text-align: center;
+    font-size: 30px;
+    border: 4px solid #000;
+    border-radius: 20px;
+    background: transparent;
+    color: whitesmoke;
+    user-select: none; /* supported by Chrome and Opera */
+ }
+
+input::placeholder{
+font-size: 25px;
+color: #000;
+user-select: none; /* supported by Chrome and Opera */
+}
+input{
+    outline: none;
+    user-select: none; /* supported by Chrome and Opera */
+}
+ div #copy-button{
+    user-select: none; /* supported by Chrome and Opera */
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid wheat;
+    width: 84px;
+    }
+    @media  screen and  (min-width:350px) and (max-width: 768px) {
+        .heading{
+            font-size: 25px;
+            margin:10px;
+        }
+        input{
+            width: 220px;
+        }
+        input::placeholder{
+            font-size: 18px;
+           
+            }
+            div #copy-button{
+                user-select: none; /* supported by Chrome and Opera */
+                border-radius: 20px;
+                margin-top: 10px;
+                width: 84px;
+                }
+}
